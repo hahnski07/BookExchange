@@ -55,6 +55,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -131,6 +132,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Entities\Author.cs" />
+    <Compile Include="Models\Entities\Listing.cs" />
+    <Compile Include="Models\Entities\Search.cs" />
+    <Compile Include="Models\Entities\SearchParam.cs" />
+    <Compile Include="Models\Entities\Subject.cs" />
+    <Compile Include="Models\Entities\Subscription.cs" />
+    <Compile Include="Models\Entities\Suggestion.cs" />
+    <Compile Include="Models\Entities\TextBook.cs" />
+    <Compile Include="Models\Entities\Thumbnail.cs" />
+    <Compile Include="Models\Entities\User.cs" />
+    <Compile Include="Models\Entities\View.cs" />
+    <Compile Include="Models\Repository\BookExchangeDataContext.cs" />
+    <Compile Include="Models\Repository\DatabaseRepository.cs" />
+    <Compile Include="Models\Repository\IRepository.cs" />
+    <Compile Include="Models\Repository\MemoryRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -153,7 +169,6 @@
     <Folder Include="Assets\Styles\" />
     <Folder Include="Controllers\" />
     <Folder Include="Filters\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
